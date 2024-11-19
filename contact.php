@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $to = "sirenstudiosmanils@gmail.com"; // Replace with your email
+    $to = "sirenstudiosmanila@gmail.com"; // Replace with your email
     $subject = $_POST['subject'];
     $message = $_POST['message'];
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
