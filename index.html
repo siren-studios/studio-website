@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siren Studios</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="./img/siren-emblem.svg" />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+            >
+              <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="index.html" class="logo" alt="LOGO"
+            ><img src="./img/siren-logo-svg.svg"
+          /></a>
+        </li>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="services.html">Services</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+            >
+              <path
+                d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="homepage">
+      <div class="home-text">
+        <h2>
+          Photo and video studio located in the heart of Makati City, offering
+          space for all your creative needs.
+        </h2>
+        <h4>
+          Convenient, affordable, and flexible—your favorite space for
+          photographers, artists, and pets, where memories are captured and
+          cherished.
+        </h4>
+      </div>
+      <div class="home-pic">
+        <img src="./img/home-picture.webp" />
+      </div>
+    </div>
+
+
+    <footer class="footer">
+      <div class="footer-logo">
+   <a href="index.html"><img src="./img/siren-logo-svg.svg" /></a>     
+      </div>
+
+      <div class="footer-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+        <div class="footer-copyright">
+          <p>&copy;2024 Siren Photo Studios. All rights reserved</p>
+        </div>
+    </footer>
+
+  </body>
+</html>

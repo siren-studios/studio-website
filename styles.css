@@ -1,0 +1,1026 @@
+  @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+
+  body {
+    padding-top: 100px;
+    overflow-x: hidden;
+  }
+
+
+
+
+
+  /* NAV BAR */
+
+
+  nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 95%;
+      padding: 20px 10px;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+      border-bottom: 2px solid #333333;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+    
+    nav ul {
+      width: 100%;
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      
+      padding: 0px;
+    }
+    
+    nav li {
+      height: 50px;
+    }
+    
+    nav a {
+      height: 100%;
+      padding: 0 30px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: black;
+      transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color change */
+    }
+    
+    /* Hover effect for navigation links */
+    nav a:hover {
+      color: #231f20; /* Change text color on hover */
+      background-color: rgba(234, 234, 234, 0.5); /* Light background on hover */
+    }
+    
+    /* Style the logo link */
+    .logo {
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+    }
+    
+    /* Logo image styling */
+    .logo img {
+      width: 140px; /* Adjust width of the logo as needed */
+      height: auto; /* Maintain aspect ratio */
+      display: block;
+    }
+    
+    nav li:first-child {
+      margin-right: auto;
+    }
+    
+    .sidebar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 250px;
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+      list-style: none;
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    
+    .sidebar li {
+      width: 100%;
+    }
+    
+    .sidebar a {
+      width: 100%;
+    }
+    
+    .menu-button {
+      display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+  .homepage {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 20px;
+  }
+
+  .home-text {
+    flex-basis: 50%;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .home-text h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+
+  .home-text h4 {
+    font-size: 30px;
+    color: #666;
+    font-weight: 300;
+  }
+
+  .home-pic {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-pic img {
+    width: 45em;
+    height: 35em;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* SERVICES */
+
+  .studio-set {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+  }
+
+  .studio-set-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+  }
+
+  .pic-set {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .info-set {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .info-set-reverse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .pic-set img {
+    width: 35em;
+    height: 25em;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .info-set .service-line {
+    width: 60px;
+    height: 2px;
+    background-color: #333;
+    margin: 10px 0;
+  }
+
+  .info-set-reverse .service-line {
+    width: 60px;
+    height: 2px;
+    background-color: #333;
+    margin: 10px 0;
+
+    align-self: flex-end;
+  }
+
+  .info-set h2 {
+    font-size: 2em;
+  }
+
+  .info-set-reverse h2 {
+    font-size: 2em;
+    align-self: flex-end;
+  }
+
+  .info-set p,
+  .info-set-reverse p {
+    font-weight: 300;
+    font-size: 1.5em;
+    width: 80%;
+  }
+
+  .info-set-reverse p {
+    align-self: flex-end;
+    text-align: right;
+  }
+
+  .info-set button {
+    background-color: #dff8ab;
+    padding: 10px 10px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid #231f20;
+    margin-top: 20px;
+  }
+
+  .info-set-reverse button {
+    background-color: #dff8ab;
+    padding: 10px 10px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid #231f20;
+    margin-top: 20px;
+    align-self: flex-end;
+  }
+
+  /* SERVICES BOXES */
+
+  .services-boxes {
+    display: flex;
+flex-direction: row;
+justify-content: center;
+    
+  margin-left: auto;
+  margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 95%;
+  }
+
+  .rates-box {
+    width: 50%;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-color: #dff8ab;
+    padding: 50px 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid #231f20;
+  }
+
+
+  
+  .address-box {
+    width: 50%;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-color: #dff8ab;
+    padding: 50px 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid #231f20;
+  }
+
+  .rates-box button,
+  .address-box button {
+    width: 8em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .rates-box button a,
+  .address-box button a {
+    text-decoration: none;
+    color: #231f20;
+  }
+
+  .rates-box button a:visited,
+  .address-box button a:visited {
+    text-decoration: none;
+    color: #231f20;
+  }
+
+
+  /* CONTACT */
+
+  .contact {
+    display: flex;
+    margin-top: 30px; 
+
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* Contact form */
+  #contact-us-form {
+    background-color: #dff8ab;
+    padding: 50px 20px;
+    margin: 20px;
+    text-align: center;
+    width: 50%;
+    border-radius: 50px;
+    border: 2px solid #231f20;
+  }
+
+  .contact-us-form-header {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  #contact-us-form p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+
+  /* Container for the form */
+  .container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Styling the form inputs */
+  form input[type="text"],
+  form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+  }
+
+  /* Submit button styling */
+  form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  .contact-info {
+    margin: 20px;
+    width: 50%;
+  }
+
+  .contact-desc {
+    margin-bottom: 50px;
+  }
+
+  .contact-desc p {
+    font-family: "Roboto" sans-serif;
+    font-weight: 300;
+    font-size: 2.5em;
+  }
+
+  .contact-details {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .contact-det-1,
+  .contact-det-2 {
+    width: 50%;
+  }
+
+  .contact-det-1 {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: space-between;
+  }
+
+  .contact-det-1,
+  .contact-det-2 {
+    flex-basis: 48%; /* Ensures both divs take up roughly half the available space */
+    border-radius: 8px;
+  }
+
+  .contact-det-1 h3,
+  .contact-det-2 h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contact-det-1 p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .contact-det-2 p {
+    font-size: 1em;
+  }
+
+ 
+
+  .contact-det-2 p a:visited {
+    color:#231f20;
+  }
+
+
+/* FOOTER */
+
+.footer{
+  margin-top: 6em;
+
+  border-top: 2px solid #333333;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-logo{
+  display: flex;
+  justify-content: center;
+  padding-top: .5em;
+}
+
+.footer-logo a:hover{
+  background-color: rgba(234, 234, 234, 0.5);
+  padding: 0 30px
+}
+
+.footer-logo img {
+  width: 140px; /* Adjust width of the logo as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+.footer-nav ul{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+ 
+
+
+
+}
+
+.footer-nav ul li{
+  list-style-type: none;
+  margin: 1.375em;
+ 
+
+}
+
+
+.footer-nav ul li a{
+  text-decoration: none;
+  padding: 10px 10px;
+  
+}
+
+.footer-nav a:hover {
+  color: #231f20; /* Change text color on hover */
+  background-color: rgba(234, 234, 234, 0.5); /* Light background on hover */
+}
+
+.footer-nav ul li a:visited{
+  color:#231f20
+}
+
+
+.footer-copyright{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3em;
+  padding-top: 0.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 1024px) {
+
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+
+    /* HOMEPAGE */
+
+    .homepage {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* SERVICES */
+
+    .studio-set{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      max-width: 80%;
+      margin-right: auto;
+    }
+
+
+    .studio-set-reverse{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      max-width: 80%;
+      margin-left: auto;
+    }
+
+
+    .info-set{
+      width: 35em;
+    }
+
+    .info-set-reverse{
+      width: 35em;
+    }
+
+    .rates-box p{
+      font-size: 1.1em;
+    }
+
+  .address-box p{
+      font-size: 1.1em;
+    }
+
+
+
+
+
+    .info-set p,
+    .info-set-reverse p {
+      font-weight: 300;
+      font-size: 1.5em;
+      width: 100%;
+    }
+
+    .info-set-reverse h2,
+    .info-set h2 {
+      padding-top: 20px;
+    }
+
+    .info-set button,
+    .info-set-reverse button {
+      margin-bottom: 30px;
+    }
+
+    /* CONTACT */
+
+    .contact{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    #contact-us-form{
+      width: 90%;
+    }
+
+
+    .contact-info{
+      width: 90%;
+    }
+
+    .contact-det-1 p:first-of-type{
+     word-break: break-all;
+    }
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Responsive design for smaller screens */
+  @media (max-width: 835px) {
+    /* HOMEPAGE */
+
+    .container {
+      padding: 0 20px;
+    }
+
+    .homepage {
+      flex-direction: column; /* Stacks the elements vertically */
+      padding: 40px;
+    }
+
+    .home-text,
+    .home-pic {
+      flex-basis: 100%; /* Makes both sections full width on smaller screens */
+    }
+
+    .home-pic {
+      margin-top: 20px; /* Adds space between the text and image */
+    }
+
+    .home-pic img {
+      width: 100%; /* Makes the image fill the width of the screen */
+      height: auto; /* Ensures the aspect ratio is maintained on small screens */
+    }
+
+    /* SERVICES */
+
+    
+
+
+
+
+    /* CONTACT */
+
+    .contact {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+
+      padding: 0px 80px 80px 80px;
+    }
+
+    /* CONTACT FORM */
+    #contact-us-form {
+      background-color: #dff8ab;
+      padding: 50px 20px;
+      margin: 20px;
+      text-align: center;
+      width: 100%;
+      border-radius: 50px;
+      border: 2px solid #231f20;
+    }
+
+    .contact-us-form-header {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    #contact-us-form p {
+      font-size: 1.3em;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    /* Container for the form */
+    .container {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Styling the form inputs */
+    form input[type="text"],
+    form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+      font-family: "Roboto", sans-serif;
+      box-sizing: border-box;
+    }
+
+    /* Submit button styling */
+    form input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 15px 20px;
+      font-size: 16px;
+      font-family: "Roboto", sans-serif;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    .contact-info {
+      margin: 20px;
+      width: 100%;
+    }
+
+    .contact-desc {
+      margin-bottom: 50px;
+    }
+
+    .contact-desc p {
+      font-family: "Roboto" sans-serif;
+      font-weight: 300;
+      font-size: 2.2em;
+    }
+
+    .contact-details {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .contact-det-1,
+    .contact-det-2 {
+      width: 50%;
+    }
+
+    .contact-det-1 {
+      display: flex;
+      flex-direction: column;
+      align-content: flex-end;
+      justify-content: space-between;
+    }
+
+    .contact-det-1,
+    .contact-det-2 {
+      flex-basis: 48%; /* Ensures both divs take up roughly half the available space */
+      border-radius: 8px;
+    }
+
+    .contact-det-1 h3,
+    .contact-det-2 h3 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    .contact-det-1 p {
+      font-size: 1.2em;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .contact-det-2 p {
+      font-size: 1.2em;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 431px) {
+
+    .sidebar {
+      width: 100%;
+    }
+
+    body {
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    .homepage {
+      flex-direction: column;
+      padding: 20px 20px;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .home-text,
+    .home-pic {
+      width: 100%;
+    }
+
+    .home-text h2 {
+      font-size: 2.3em;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .home-pic img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* SERVICES */
+    .studio-set,
+    .studio-set-reverse {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    .info-set,
+    .info-set-reverse,
+    .pic-set {
+      width: 100%; /* Use 100% width to avoid overflow issues */
+      max-width: 35em; /* Add max-width to control size but allow scaling */
+      box-sizing: border-box;
+    }
+
+    .rates-box p,
+    .address-box p {
+      font-size: 1.1em;
+    }
+
+    .info-set p,
+    .info-set-reverse p {
+      font-weight: 300;
+      font-size: 1.5em;
+      width: 100%;
+    }
+
+    .info-set h2,
+    .info-set-reverse h2 {
+      padding-top: 20px;
+    }
+
+    .info-set button,
+    .info-set-reverse button {
+      margin-bottom: 30px;
+    }
+
+    .services-boxes{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+
+    .rates-box{
+      width: 90%;
+    }
+
+    .address-box{
+      width: 90%;
+    }
+  
+
+
+
+    /* CONTACT */
+
+    .contact{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .contact-details{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .contact-det-1{
+      width: 100%;
+    }
+
+  
+   
+
+    
+
+   
+
+
+
+
+
+    /* FOOTER */
+
+    .footer-nav ul{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-copyright p{
+      text-align: center;
+    }
+
+
+
+  }
+
+
+
+  @media (max-width: 321px){
+
+    .rates-box, .address-box{
+      padding-bottom: 220px;
+    }
+
+  }

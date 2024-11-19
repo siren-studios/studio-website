@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="./img/siren-emblem.svg" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+            >
+              <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="index.html" class="logo" alt="LOGO"
+            ><img src="./img/siren-logo-svg.svg"
+          /></a>
+        </li>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="services.html">Services</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+            >
+              <path
+                d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--------------------------contact-us-form-------------------------->
+
+    <div class="contact">
+      <section id="contact-us-form">
+        <h3 class="contact-us-form-header">Contact Us!</h3>
+        <p>
+          Have a question? A concern? Or a suggestion? Send us a message and
+          we'll get right to it!
+        </p>
+        <div class="container">
+          <form action="php/contact.php" method="post">
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+
+            <input
+              type="text"
+              id="subj"
+              name="subject"
+              placeholder="Subject"
+              required
+            />
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message"
+              rows="5"
+              required
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+
+      <section class="contact-info">
+        <div class="contact-desc">
+          <p>
+            For inquiries, connect with us on social media or email. We look
+            forward to hearing from you!
+          </p>
+        </div>
+
+        <div class="contact-details">
+          <div class="contact-det-1">
+            <h3>General Inquiries:</h3>
+              <p>Gmail<br />cairo.sirenstudios@gmail.com</p>
+              <p>Phone<br />+63 926 784 4241</p>
+           
+          </div>
+
+          <div class="contact-det-2">
+            <h3>Social Media:</h3>
+
+            <p>
+              <a href="https://www.instagram.com/siren_studiosph/">Instagram</a>
+            </p>
+            <p>
+              <a href="https://www.facebook.com/sirenstudiosph/">Facebook</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-logo">
+        <a href="index.html"><img src="./img/siren-logo-svg.svg" /></a>
+      </div>
+
+      <div class="footer-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-copyright">
+        <p>&copy;2024 Siren Photo Studios. All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
