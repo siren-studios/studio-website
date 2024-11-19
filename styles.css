@@ -879,6 +879,7 @@ justify-content: center;
 
     .sidebar {
       width: 100%;
+      background-color:white;
     }
 
     body {
