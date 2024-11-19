@@ -523,7 +523,8 @@ justify-content: center;
 .footer-nav ul li a{
   text-decoration: none;
   padding: 10px 10px;
-  
+  color: #231f20;
+
 }
 
 .footer-nav a:hover {
